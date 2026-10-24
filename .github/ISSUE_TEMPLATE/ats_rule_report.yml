@@ -1,0 +1,18 @@
+name: ATS rule report
+description: Report a possible ATS rule violation or extraction issue.
+title: "[ATS]: "
+labels: [ats]
+body:
+  - type: textarea
+    id: rule
+    attributes:
+      label: Rule ID and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reproduction and extraction evidence
+      description: Use fictional CV content only. Never upload a real CV.
+    validations:
+      required: true

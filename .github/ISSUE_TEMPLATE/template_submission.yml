@@ -1,0 +1,19 @@
+name: Template submission
+description: Propose a declarative template token set.
+title: "[Template]: "
+labels: [template]
+body:
+  - type: input
+    id: template
+    attributes:
+      label: Template name and author
+    validations:
+      required: true
+  - type: textarea
+    id: tokens
+    attributes:
+      label: Template token JSON
+      description: No HTML, CSS, JavaScript, images, or custom fonts.
+      render: json
+    validations:
+      required: true

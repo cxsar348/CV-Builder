@@ -1,0 +1,17 @@
+name: Translation
+description: Suggest a UI or CV-language translation improvement.
+title: "[Translation]: "
+labels: [translation]
+body:
+  - type: input
+    id: language
+    attributes:
+      label: Language and locale
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording and context
+    validations:
+      required: true
